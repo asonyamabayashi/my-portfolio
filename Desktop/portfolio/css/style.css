@@ -1,0 +1,139 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/*border-boxの例*/
+.box {
+  width: 200px;
+  padding: 20px;
+  border: 5px solid #333;
+  box-sizing: border-box;
+}
+body {
+  font-family: "メイリオ", "游ゴシック", "Yu Gothic", sans-serif;
+  color: #333;
+  background-color: skyblue;
+}
+
+:root {
+  --main-color: #3498db;
+  --accent-color: #e67e22;
+}
+
+a {
+  color: var(--accent-color);
+  text-decoration: none;
+}
+.container {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+section {
+  padding: 60px 0;
+}
+h2 {
+  font-family: "Arial", sans-serif;
+  font-weight: bold;
+  color: #333;
+  font-size: 2.4em;
+  text-align: center;
+  margin-bottom: 32px;
+  color: var(--main-color);
+}
+header {
+  background: #f8f9fa;
+  padding: 16px 0;
+}
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header h1 {
+  font-size: 2rem;
+  color: #0077cc;
+  margin: 0;
+}
+header nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+header nav ul li {
+  margin-left: 24px;
+}
+header nav ul li a {
+  color: #333;
+  transition: color 0.3s;
+}
+header nav ul li a:hover {
+  color: #0077cc;
+}
+#hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+#hero h2 {
+  font-size: 3rem;
+}
+#hero img {
+  width: 300px;
+  height: auto;
+  border-radius: 16px;
+}
+#about p {
+  line-height: 1.8;
+}
+.works-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+.works-grid article {
+  border: 1px solid #ddd;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 16px;
+}
+.works-grid article img {
+  width: 100%;
+  height: auto;
+}
+.works-grid article h3 {
+  font-size: 1.2rem;
+  margin-top: 12px;
+  margin-bottom: 8px;
+}
+.works-grid article p {
+  font-size: 0.9rem;
+  line-height: 1.6;
+  margin-bottom: 0;
+}
+#contact {
+  text-align: center;
+}
+.button {
+  background-color: #007bff;
+  color: #ffffff;
+  text-decoration: none;
+  padding: 12px 24px;
+  display: inline-block;
+  border-radius: 8px;
+  transition: background-color 0.3s;
+}
+.button:hover {
+  background-color: #0056b3;
+}
+footer {
+  background-color: #333333;
+  color: #ffffff;
+  padding: 20px 0;
+  text-align: center;
+  font-size: 0.9rem;
+}
